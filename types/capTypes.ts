@@ -1,3 +1,4 @@
+import type { DocumentReference } from "firebase/firestore";
 
 
 
@@ -16,11 +17,13 @@ export type User = {
 export type Coordinates = { latitude: number, longitude: number };
 
 export type Session = {
+	uid: string,
+	name: string,
 	coordinates: Coordinates
 	players: User[],
 	startTime: number,
 	running: boolean
-	uid: string
+	ref?: DocumentReference
 }
 
 
