@@ -1,5 +1,5 @@
 <script>
-  import { firebaseConnectionState } from "./firebase";
+  import { firebaseConnectionState } from "@lib/firebase";
   import { SignedIn } from "sveltefire";
 </script>
 

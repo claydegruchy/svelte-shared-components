@@ -4,7 +4,7 @@
   import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
   import type { Auth } from "firebase/auth";
 
-  import { firestore, auth } from "./firebase";
+  import { firestore, auth } from "@lib/firebase";
   import StatusIndicator from "./StatusIndicator.svelte";
 
   async function signInWithGoogle(auth: Auth) {
