@@ -11,6 +11,7 @@ export type User = {
 	email: string,
 	uid: string,
 	name: string,
+	activeSessionId: string | null,
 }
 
 export type Coordinates = [number, number]
