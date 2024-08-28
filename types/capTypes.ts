@@ -11,7 +11,6 @@ export type User = {
 	email: string,
 	uid: string,
 	name: string,
-
 }
 
 export type Coordinates = [number, number]
@@ -20,7 +19,7 @@ export type Session = {
 	uid: string,
 	name: string,
 	coordinates: Coordinates
-	players: User[],
+	playerIds: string[],
 	startTime: number,
 	running: boolean
 	ref?: DocumentReference
