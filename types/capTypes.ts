@@ -27,7 +27,7 @@ export type Session = {
 
 
 export type Event = {
-	userId: User,
+	userId: string,
 	ts: number,
 	sessionId: string,
 	eventName: string,
