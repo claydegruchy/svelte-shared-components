@@ -14,7 +14,7 @@ export type User = {
 
 }
 
-export type Coordinates = { latitude: number, longitude: number };
+export type Coordinates = [number, number]
 
 export type Session = {
 	uid: string,
@@ -29,6 +29,6 @@ export type Session = {
 
 export type FiredShot = {
 	coordinates: Coordinates,
-	user: User,
+	userId: User,
 	sessionId: string,
 }
