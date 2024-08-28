@@ -27,9 +27,34 @@ export type Session = {
 }
 
 
-export type FiredShot = {
-	coordinates: Coordinates,
+export type Event = {
 	userId: User,
-	sessionId: string,
 	ts: number,
+	sessionId: string,
+	eventName: string,
+
 }
+
+export type FiredShot = {
+	eventName: "FiredShot"
+	coordinates: Coordinates,
+} & Event
+
+export type Reload = {
+	eventName: "Reload"
+	coordinates: Coordinates,
+	wastedBullets: number,
+} & Event
+
+export type PlayerHit = {
+	eventName: "PlayerHit"
+	coordinates: Coordinates,
+	shooterId: string,
+	damage: number,
+	hp: number,
+} & Event
+
+export type PlayerDied = {
+	eventName: "PlayerDied"
+	coordinates: Coordinates,
+} & Event
