@@ -31,4 +31,5 @@ export type FiredShot = {
 	coordinates: Coordinates,
 	userId: User,
 	sessionId: string,
+	ts: number,
 }
