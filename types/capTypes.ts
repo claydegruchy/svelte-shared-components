@@ -11,6 +11,7 @@ export type User = {
 	email: string,
 	uid: string,
 	displayName: string,
+	connectedGunId: number,
 	activeSessionId: string | null,
 }
 
