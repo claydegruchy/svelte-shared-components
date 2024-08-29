@@ -10,7 +10,7 @@ export type GunConfig = {
 export type User = {
 	email: string,
 	uid: string,
-	name: string,
+	displayName: string,
 	activeSessionId: string | null,
 }
 
