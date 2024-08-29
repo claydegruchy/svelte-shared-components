@@ -11,17 +11,17 @@ export type User = {
 	email: string,
 	uid: string,
 	displayName: string,
-	connectedGunId: number,
 	activeSessionId: string | null,
 }
 
 export type Coordinates = [number, number]
+export type PlayerGunPair = [string, number]
 
 export type Session = {
 	uid: string,
 	name: string,
 	coordinates: Coordinates
-	playerIds: string[],
+	players: PlayerGunPair[],
 	startTime: number,
 	running: boolean
 	ref?: DocumentReference
