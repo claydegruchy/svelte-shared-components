@@ -25,6 +25,7 @@ export type Session = {
 	startTime: number,
 	running: boolean
 	ref?: DocumentReference
+	creatorId: string
 }
 
 
