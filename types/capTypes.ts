@@ -15,7 +15,10 @@ export type User = {
 }
 
 export type Coordinates = [number, number]
-export type PlayerGunPair = [string, number]
+export type PlayerGunPair = {
+	gunId: number,
+	uid: string,
+}
 
 export type Session = {
 	uid: string,
