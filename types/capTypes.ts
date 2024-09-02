@@ -61,7 +61,7 @@ export type Reload = {
 export type PlayerDied = {
 	eventName: "PlayerDied"
 	coordinates: Coordinates,
-	shooterUid: number,
+	shooterUid: string,
 } & Event
 
 export type PlayerSpawn = {
