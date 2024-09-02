@@ -47,7 +47,7 @@ export type FiredShot = {
 export type PlayerHit = {
 	eventName: "PlayerHit"
 	coordinates: Coordinates,
-	shooterId: string,
+	shooterUid: string,
 	damage: number,
 	hp: number,
 } & Event
